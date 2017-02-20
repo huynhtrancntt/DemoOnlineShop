@@ -26,6 +26,7 @@ namespace OnlineShop.Model.Models
         public int? DisplayOrder { set; get; }
 
         [MaxLength(256)]
+
         public string Image { set; get; }
 
         public bool? HomeFlag { set; get; }

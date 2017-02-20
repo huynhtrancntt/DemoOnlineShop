@@ -1,5 +1,10 @@
-﻿using OnlineShop.Model.Models;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using OnlineShop.Model.Models;
 
 namespace OnlineShop.Data
 {
@@ -30,9 +35,11 @@ namespace OnlineShop.Data
         public DbSet<Tag> Tags { set; get; }
 
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
+        public DbSet<Error> Errors { set; get; }
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
+
         }
     }
 }
